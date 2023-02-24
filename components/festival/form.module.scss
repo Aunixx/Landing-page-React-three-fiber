@@ -1,0 +1,111 @@
+@import "../../assets/css/mixing";
+
+.registerWrap {
+  background: #132239;
+  color: #fff;
+  padding-top: 120px;
+  padding-bottom: 180px;
+  //   height: 100vh;
+  .border {
+    border-right: 1px solid #a1a7b0;
+  }
+  .title {
+    font-size: clamp(1.875rem, 1.6549rem + 0.939vw, 2.2rem);
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 32px;
+    span {
+      color: var(--Torch-Red);
+    }
+  }
+  .rightContent {
+    max-width: 660px;
+    width: 100%;
+    .inputWrap {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      input {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 4px;
+        // height: 64px;
+        margin-bottom: 16px;
+        padding: 17px 20px;
+        color: #fff;
+        &::placeholder {
+          color: rgb(255 255 255 / 40%);
+          font-size: 15px;
+        }
+        &:focus,
+        &:active {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+      .icon1 {
+        position: absolute;
+        right: 18px;
+        top: 15px;
+      }
+      .icon2 {
+        position: absolute;
+        right: 18px;
+        top: 60%;
+      }
+    }
+
+    .cta {
+      color: var(--Plain-White) !important;
+      font-size: 18px;
+      font-family: var(--Magistral-Medium);
+      background-color: var(--Torch-Red);
+      height: 64px;
+      text-transform: uppercase;
+      line-height: 48px;
+      padding: 0px 19px;
+      color: var(--Plain-White);
+      font-family: var(--Magistral-Medium);
+      border-radius: 0px;
+      text-transform: uppercase;
+      width: 100%;
+      border-radius: 4px;
+      transition: 0.3s all;
+      &:focus {
+        background-color: #d30733;
+      }
+    }
+    .logo {
+      margin-bottom: 32px;
+    }
+  }
+  .qrWrap {
+    @include Smedium(max-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .qrImages {
+      //   text-align: center;
+      span {
+        width: 230px !important;
+        height: 230px !important;
+        max-width: 390px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.2;
+        color: #a1a7b0;
+        margin-bottom: 0;
+        margin-top: 16px;
+        text-align: center;
+        // font-family: var(--Magistral-Medium);
+        max-width: 276px;
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

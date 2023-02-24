@@ -1,0 +1,48 @@
+.termSections {
+  padding: 130px 0;
+  h2 {
+    text-align: center;
+    margin-bottom: 40px !important;
+    color: unset;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    &:first-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .tcSection {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    font-size: clamp(1.25rem, 1.0299rem + 0.939vw, 1.875rem);
+  }
+
+  h6 {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style: lower-roman;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    li {
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      margin-left: 20px;
+      & + li {
+        margin-top: 15px;
+      }
+      &::marker {
+        font-family: var(--Magistral-Medium);
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../assets/css/mixing";
+
+.installStepsSection {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--Primary-05);
+  h2 {
+    font-size: clamp(2.25rem, 1.8rem + 0.7vw, 2.5rem) !important ;
+    margin: 0;
+  }
+
+  @include xLarge(min-width) {
+    background: url(../../public/Images/arcade-steps.png) no-repeat left -50px center,
+      var(--Primary-05);
+    // background-size: contain;
+  }
+  @include xxLarge(min-width) {
+    background: url(../../public/Images/arcade-steps.png) no-repeat left center,
+      var(--Primary-05);
+    // background-size: contain;
+  }
+}
+.stepsList {
+  h6 {
+    margin-bottom: 12px;
+    font-size: clamp(1.375rem, 1rem + 0.3883vw, 1.5rem);
+  }
+  p {
+    font-size: clamp(1.125rem, 1.0898rem + 0.1502vw, 1.225rem);
+    line-height: 1.3;
+  }
+}

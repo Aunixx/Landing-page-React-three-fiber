@@ -1,0 +1,337 @@
+@import "../../assets/css/mixing";
+
+.innerHeroBanner {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  position: relative;
+  z-index: 5;
+  &.banner {
+    min-height: 90vh;
+    justify-content: flex-end;
+
+    @include medium(min-width) {
+      min-height: 500px;
+      justify-content: center;
+    }
+    @include xLarge(min-width) {
+      min-height: 650px;
+    }
+    @include xxxLarge(min-width) {
+      min-height: 800px;
+    }
+  }
+
+  &.racingBanner {
+    // background: url(../../public/Images/racingBg.png) no-repeat top center/cover;
+
+    // @include medium(min-width) {
+    //   background: url(../../public/Images/racingBg.png) no-repeat top
+    //     center/cover;
+    // }
+    // @include xLarge(min-width) {
+    //   background: url(../../public/Images/racingBg.png) no-repeat top left/cover;
+    // }
+    // @include xxxLarge(min-width) {
+    //   background: url(../../public/Images/racingBg.png) no-repeat top left/cover;
+    // }
+    position: relative;
+    isolation: isolate;
+    // &:before {
+    //   content: "";
+    //   background: linear-gradient(
+    //       180deg,
+    //       rgba(0, 0, 0, 0.3) 0%,
+    //       rgba(0, 0, 0, 0.6) 49.48%,
+    //       rgba(0, 0, 0, 0.3) 100%
+    //     ),
+    //     linear-gradient(
+    //       31.07deg,
+    //       rgba(19, 34, 57, 0) 43.04%,
+    //       rgba(162, 15, 24, 0.185938) 63.31%,
+    //       rgba(250, 3, 3, 0.3) 92.31%
+    //     );
+    //   z-index: -1;
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   inset: 0;
+    // }
+    .bannerContent {
+      position: absolute;
+      bottom: 0;
+    }
+    h1 {
+      padding-right: 80px;
+    }
+
+    cursor: url("../../public/Images/play-cursor.svg"), auto !important ;
+    .heroSectionVideo {
+      width: 100%;
+      video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(
+          111.44deg,
+          rgba(19, 34, 57, 0.235) 4.25%,
+          rgba(19, 34, 57, 0.5) 98.9%
+        );
+        z-index: -1;
+      }
+    }
+  }
+  &.tokenBanner {
+    background: url(../../public/Images/toknomics-bar.png) no-repeat top center;
+    min-height: auto;
+    background-size: cover;
+    padding: calc(clamp(150px, 10vw + 8px, 200px)) 0;
+    @include xLarge(min-width) {
+      padding: 0;
+    }
+    .token-wrapper {
+      @include xLarge(min-width) {
+        background: url(../../public/Images/token-bnr-dots.svg) no-repeat bottom
+            25% right 5%,
+          url(../../public/Images/token-a0-02.svg) no-repeat bottom 10% left
+            calc(100vw - 98%);
+      }
+    }
+    img {
+      width: 600px;
+      max-width: 100%;
+    }
+  }
+  &.downloadBanner {
+    background: url(../../public/Images/new-download.png) no-repeat right
+        bottom/70%,
+      linear-gradient(148.21deg, #132239 4.88%, #344d6f 112.07%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+
+    @include small(min-width) {
+      background: url(../../public/Images/new-download.png) no-repeat right
+          bottom/80%,
+        linear-gradient(148.21deg, #132239 4.88%, #344d6f 112.07%);
+      height: 100vh;
+      background-size: cover;
+    }
+    @include large(min-width) {
+      background: url(../../public/Images/new-download.png) no-repeat right
+          bottom/80%,
+        url(../../public/Images/d-app-hero-elements.png) no-repeat right 130px
+          center,
+        linear-gradient(148.21deg, #132239 4.88%, #344d6f 112.07%);
+      height: 100vh;
+      background-size: cover;
+    }
+    @include xLarge(min-width) {
+      background: url(../../public/Images/new-download.png) no-repeat right
+          bottom,
+        url(../../public/Images/d-app-hero-elements.png) no-repeat right 130px
+          center,
+        linear-gradient(148.21deg, #132239 4.88%, #344d6f 112.07%);
+      background-size: cover;
+    }
+
+    h1 {
+      color: var(--Plain-White);
+      margin-bottom: 16px;
+      font-size: clamp(2rem, 1.45rem + 2.1vw, 3rem);
+      // max-width: 760px;
+    }
+    p {
+      color: var(--Plain-White);
+      margin-bottom: 40px;
+      font-size: 20px;
+      line-height: initial;
+      font-family: var(--Magistral-Light);
+      max-width: 760px;
+    }
+    pointer-events: none;
+  }
+  &.landBanner {
+    height: 100vh;
+    // pointer-events: none;
+    background: url(../../public/Images/nitro-prime-bg-img.png) no-repeat
+      center/cover;
+    background-color: #060919;
+    // padding-bottom: 50px;
+
+    @include medium(min-width) {
+      background: url(../../public/Images/nitro-prime-bg-img.png) no-repeat
+        center/cover;
+      background-color: #060919;
+    }
+    @include xLarge(min-width) {
+      background: url(../../public/Images/nitro-prime-bg-img.png) no-repeat
+        center/cover;
+      background-color: #060919;
+    }
+    @include xxxLarge(min-width) {
+      background-image: url(../../public/Images/nitro-prime-bg-img.png)
+        no-repeat center/cover;
+      background-color: #060919;
+    }
+    .imgGlobe {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 500px !important;
+        height: 500px !important;
+      }
+      .imgWrap {
+        background-color: red;
+      }
+      @include ipad(max-width) {
+        display: none;
+      }
+    }
+    .bottom {
+      position: relative;
+
+      .heading {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.16em;
+        color: var(--Plain-White);
+        margin-bottom: 6px;
+      }
+      .desc {
+        font-size: 16px;
+        line-height: 19px;
+        color: #b8bdc4;
+      }
+    }
+    @keyframes rotating {
+      from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    .rotating {
+      -webkit-animation: rotating 40s linear infinite;
+      -moz-animation: rotating 40s linear infinite;
+      -ms-animation: rotating 40s linear infinite;
+      -o-animation: rotating 40s linear infinite;
+      animation: rotating 40s linear infinite;
+    }
+  }
+  &.lifeStyleBanner {
+    pointer-events: none;
+    background: url(../../public/Images/building-banner-img.png) no-repeat
+        center bottom/820px,
+      url(../../public/Images/land-slide-z8.png) no-repeat top center/100%,
+      url(../../public/Images/land-slide-z5.png) no-repeat center/100%,
+      url(../../public/Images/jangla-10.svg) left,
+      url(../../public/Images/cars-bg-1.png) center/cover no-repeat, #19223a;
+
+    @include medium(min-width) {
+      background: url(../../public/Images/building-banner-img.png) no-repeat
+          right bottom/500px,
+        url(../../public/Images/land-slide-z8.png) no-repeat top center/100%,
+        url(../../public/Images/jangla-10.svg) left -50%,
+        url(../../public/Images/cars-bg-1.png) center/cover no-repeat, #19223a;
+    }
+    @include xLarge(min-width) {
+      background: url(../../public/Images/building-banner-img.png) no-repeat
+          right bottom/700px,
+        url(../../public/Images/land-slide-z8.png) no-repeat top center/100%,
+        url(../../public/Images/jangla-10.svg) left -50%,
+        url(../../public/Images/cars-bg-1.png) center/cover no-repeat, #19223a;
+      justify-content: center;
+    }
+    @include xxxLarge(min-width) {
+      background: url(../../public/Images/building-banner-img.png) no-repeat
+          right bottom/900px,
+        url(../../public/Images/land-slide-z8.png) no-repeat top center/100%,
+        url(../../public/Images/jangla-10.svg) left -50%,
+        url(../../public/Images/cars-bg-1.png) center/cover no-repeat, #19223a;
+      justify-content: center;
+    }
+  }
+
+  h1 {
+    color: var(--Plain-White);
+    margin-bottom: 16px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: clamp(2.5rem, 2.2573rem + 1.0356vw, 2.59rem);
+  }
+  p {
+    color: var(--Plain-White);
+    margin-bottom: 32px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: clamp(1.12rem, 1.3rem + 0.3vw, 0.8rem);
+    line-height: 1.4;
+    max-width: 500px;
+  }
+}
+
+.videoModal {
+  :global {
+    .modal-dialog {
+      max-width: 90% !important ;
+      margin: 0 auto !important;
+      .modal-header {
+        border: 0;
+      }
+      .modal-body {
+        position: relative;
+        height: 740px;
+        width: 100%;
+        padding: 0;
+        .crossIcon {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          position: relative;
+          z-index: 9;
+          svg {
+            width: 32px;
+            height: 32px;
+            color: red;
+            cursor: pointer;
+          }
+        }
+        // background-color: #000;
+        video {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          inset: 0;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

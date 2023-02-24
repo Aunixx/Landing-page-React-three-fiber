@@ -1,0 +1,140 @@
+.treasureWrapper {
+  background-color: #081224;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  color: var(--Plain-White);
+  h3 {
+    color: var(--Plain-White) !important;
+    font-size: clamp(2.5rem, 2.2573rem + 1.0356vw, 2.59rem);
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .imgWrap {
+    border: 1px solid #424e61;
+    padding: 12px;
+    position: relative;
+    height: 100%;
+    min-height: 300px;
+    > span {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    img {
+      background: #081224;
+      object-fit: contain !important;
+    }
+    // img {
+    //   width: 330px !important;
+    //   height: 330px !important;
+    // }
+    .span1 {
+      top: 0;
+      position: absolute;
+      left: 0;
+      &:before {
+        content: "";
+        height: 1px;
+        width: 14px;
+        position: absolute;
+        z-index: 1;
+        border-top: 4px solid #424e61;
+        left: -2px;
+        top: -2px;
+      }
+      &:after {
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        z-index: 1;
+        border-left: 4px solid #424e61;
+        left: -2px;
+        top: -2px;
+      }
+    }
+    .span2 {
+      top: 0;
+      position: absolute;
+      right: 0;
+      &:before {
+        content: "";
+        height: 1px;
+        width: 14px;
+        position: absolute;
+        z-index: 1;
+        border-top: 4px solid #424e61;
+        right: -2px;
+        top: -2px;
+      }
+      &:after {
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        z-index: 1;
+        border-left: 4px solid #424e61;
+        right: -12px;
+        top: -2px;
+      }
+    }
+    .span3 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      &:before {
+        content: "";
+        height: 1px;
+        width: 14px;
+        position: absolute;
+        z-index: 1;
+        border-top: 4px solid #424e61;
+        left: -2px;
+        bottom: -2px;
+      }
+      &:after {
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        z-index: 1;
+        border-left: 4px solid #424e61;
+        left: -2px;
+        bottom: 0;
+      }
+    }
+    .span4 {
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      &:before {
+        content: "";
+        height: 1px;
+        width: 14px;
+        position: absolute;
+        z-index: 1;
+        border-top: 4px solid #424e61;
+        right: -2px;
+        bottom: -2px;
+      }
+      &:after {
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        z-index: 1;
+        border-left: 4px solid #424e61;
+        right: -12px;
+        bottom: -2px;
+      }
+    }
+  }
+  :global {
+    .mySwiper {
+      // overflow: initial !important;
+    }
+    .swiper-slide {
+      height: unset !important;
+    }
+  }
+}

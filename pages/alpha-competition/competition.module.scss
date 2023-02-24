@@ -1,0 +1,37 @@
+.competeWrap {
+  height: 100vh;
+  background-color: #132239;
+  background-image: url("../../public/Images/competition.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    max-width: 600px;
+
+    h3 {
+      font-size: 56px;
+      line-height: 68px;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 34px;
+      color: #ffffff;
+      margin-bottom: 32px;
+    }
+    .link {
+      a {
+        background: #cef952;
+        border-radius: 2px;
+        color: #132239;
+        padding: 16px 24px;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

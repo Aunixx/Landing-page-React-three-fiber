@@ -1,0 +1,84 @@
+.customModal {
+  :global {
+    .modal-dialog {
+      max-width: 430px !important;
+
+      .modal-content {
+        background-color: var(--Regular-text-color) !important;
+        border: none;
+        padding: 48px !important;
+
+        .modal-header {
+          border: none;
+          color: var(--Plain-White);
+          font-size: 28px;
+          line-height: 34px;
+          font-family: var(--Magistral-Bold);
+          padding: 0;
+          margin-bottom: 24px;
+        }
+        .modal-body {
+          padding: 0;
+
+          input {
+            height: 58px;
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-radius: 8px;
+            border: none;
+            color: var(--Plain-White);
+
+            &:focus,
+            &:active {
+              border: none;
+              outline: none;
+              box-shadow: none;
+              background-color: rgba(255, 255, 255, 0.1) !important;
+            }
+          }
+          label {
+            color: var(--Primary-20);
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+
+        .modal-footer {
+          border: none;
+          padding: 0;
+          justify-content: center;
+          button {
+            width: 100%;
+            &.inValid {
+              background-color: var(--Primary-60);
+            }
+          }
+        }
+        .noAcc {
+          color: var(--Primary-40);
+          font-size: 14px;
+          line-height: 17px;
+          margin-top: 20px;
+          a {
+            color: var(--Primary-40);
+            text-decoration: underline;
+          }
+        }
+        .description {
+          color: var(--Primary-40);
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 20px;
+        }
+        .desc {
+          font-size: 16px;
+          line-height: 19px;
+          color: var(--Primary-30);
+          text-align: center;
+        }
+        a {
+          color: var(--Primary-40);
+        }
+      }
+    }
+  }
+}

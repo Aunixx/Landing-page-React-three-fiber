@@ -1,0 +1,75 @@
+@import "../../assets/css/mixing";
+.wheelsWrapper {
+  // background-color: #132239;
+  // background-image: radial-gradient(
+  //   100% 100% at 51.67% 0%,
+  //   #132239 41.26%,
+  //   rgba(0, 11, 21, 0.622786) 100%
+  // );
+  background-color: #0d172e;
+  background-image: radial-gradient(
+    100% 100% at 51.67% 0,
+    #1b3050 41.26%,
+    rgba(0, 11, 21, 0.623) 100%
+  );
+  isolation: isolate;
+  padding-bottom: 50px;
+
+  h2 {
+    font-size: 64px !important;
+    line-height: 68px;
+    line-height: 1;
+    text-shadow: 0px 20px 0 #ffffff, -10px 10px 0 transparent;
+    -webkit-text-stroke: 1px rgb(255 255 255 / 25%);
+    color: transparent;
+    z-index: -1;
+    position: relative;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding-block: 100px;
+    // @include xLarge(min-width) {
+    //   text-shadow: 0px 60px 0 #000c1b, -10px 10px 0 transparent;
+    //   bottom: 35px;
+    // }
+  }
+
+  :global {
+    .swiper {
+      .swiper-slide {
+        scale: 0.6;
+        opacity: 0.4;
+      }
+      .swiper-slide-active {
+        scale: 1;
+        opacity: 1;
+      }
+    }
+  }
+  .carDetail {
+    h4 {
+      font-size: 26.7247px;
+      line-height: 32px;
+      color: var(--Plain-White);
+      margin-bottom: 32px;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      color: var(--Plain-White);
+      margin-bottom: 32px;
+    }
+  }
+  a {
+    background-color: var(--Torch-Red);
+    color: var(--Plain-White);
+    padding: 16px 24px;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+  }
+}

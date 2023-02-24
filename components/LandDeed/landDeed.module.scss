@@ -1,0 +1,117 @@
+.LandDeedWrapper {
+  background-color: #081224;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  .detail {
+    max-width: 730px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    h3 {
+      color: var(--Plain-White) !important;
+      font-size: clamp(2.5rem, 2.2573rem + 1.0356vw, 2.59rem);
+      margin-bottom: 8px;
+    }
+    p {
+      text-align: center;
+      color: var(--Plain-White);
+      font-size: clamp(1.12rem, 1.3rem + 0.3vw, 0.8rem);
+      line-height: 1.4;
+    }
+  }
+}
+.deedTop {
+  img {
+    mix-blend-mode: exclusion;
+    opacity: 0.8;
+  }
+}
+.mySlides {
+  position: relative;
+  .imgDesc {
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.5s all;
+
+    .item {
+      font-size: 20.25px;
+      line-height: 24px;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+    .zone {
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #b8bdc4;
+      margin-bottom: 6px;
+      white-space: nowrap;
+    }
+    .pricing {
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: capitalize;
+      color: #b8bdc4;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        margin-right: 6px;
+        color: #62688f;
+      }
+    }
+  }
+  .gif {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // display: none;
+    opacity: 0;
+    transition: 0.5s all;
+  }
+  .slideImg {
+    transition: 0.5s all;
+  }
+  &:hover {
+    .slideImg,
+    .imgDesc {
+      opacity: 0.3;
+      scale: 0.9;
+    }
+    .gif {
+      > span {
+        width: 480px !important;
+        height: 286px !important;
+      }
+      opacity: 1;
+    }
+  }
+}
+
+.slideDesc {
+  margin-top: 28px;
+  text-align: center;
+  span {
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #717a88;
+  }
+  p {
+    font-size: 22px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+}

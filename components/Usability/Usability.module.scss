@@ -1,0 +1,150 @@
+@import "../../assets/css/mixing";
+
+.UsabilitySec {
+    .UsabilityContainer {
+        @include large(min-width) {
+            max-width: 70%;
+        }
+        @include small(max-width) {
+            padding-bottom: 0 !important;
+        }
+    }
+    background-color: var(--Regular-text-color);
+    h3 {
+        font-family: var(--Magistral-Bold);
+        color: var(--Plain-White);
+        font-size: 32px;
+        line-height: 30px;
+        @include small(max-width) {
+            font-size: 20px;
+        }
+    }
+    ol {
+        h4 {
+            font-family: var(--Magistral-Regular);
+            color: var(--Plain-White);
+            font-size: 24px;
+            line-height: 30px;
+            @include small(max-width) {
+                font-size: 18px;
+            }
+        }
+        li {
+            counter-increment: item;
+
+            &::before {
+                // color: var(--Plain-White);
+                // counter-increment: item;
+                font-family: var(--Magistral-Regular);
+                content: "0" counter(item);
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .UsabilityRow {
+        background: #1e2b40;
+        position: relative;
+        p {
+            font-family: var(--Magistral-Regular);
+            color: var(--Plain-White);
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &::after {
+            content: "";
+            background-image: url("../../public/Images/Polygon.png");
+            position: absolute;
+            background-repeat: no-repeat;
+            top: -9px;
+            right: 18%;
+            width: 32px;
+            height: 14px;
+        }
+    }
+    .SetRow {
+        position: relative;
+        &::before {
+            content: "";
+            background-image: url("../../public/Images/get-background.svg");
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            left: -15%;
+            top: 0px;
+        }
+    }
+    .FeedbackRow {
+        position: relative;
+        &::before {
+            content: "";
+            background-image: url("../../public/Images/feedback-background.svg");
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            left: -15%;
+            top: 80%;
+        }
+    }
+    h2 {
+        font-family: var(--Magistral-Bold);
+        color: var(--Plain-White);
+        font-size: 60px !important;
+        line-height: 65px;
+    }
+    ul {
+        li {
+            counter-increment: item;
+            font-family: var(--Magistral-Regular);
+            color: var(--Plain-White);
+            font-size: 24px;
+            line-height: 30px;
+            position: relative;
+            padding: {
+                left: 30px;
+                bottom: 50px;
+            }
+            @include small(max-width) {
+                padding: {
+                    left: 40px !important;
+                    bottom: 30px !important;
+                }
+                font-size: 18px;
+            }
+            a {
+                color: var(--Torch-Red);
+                text-decoration: underline;
+            }
+            &::before {
+                font-family: var(--Magistral-Bold);
+                color: var(--Torch-Red);
+                content: "0" counter(item);
+                font-size: 35px;
+                line-height: 30px;
+                position: absolute;
+                left: -10%;
+                @include small(max-width) {
+                    left: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.StartingSec {
+    background-color: rgb(19 34 57 / 99%);
+    .StarttingRow {
+        background-image: url("../../public/Images/dotted.png");
+        background-repeat: no-repeat;
+        background-position: center left;
+        @include small(max-width) {
+            padding-bottom: 0 !important;
+            background-image: none;
+        }
+    }
+    background-image: url("../../public/Images/testing-background.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}

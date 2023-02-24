@@ -1,0 +1,76 @@
+@import "../../assets/css/mixing";
+
+.thankYouWrap {
+  background-color: #132239;
+  height: 100vh;
+  @include medium(max-width) {
+    height: 70vh;
+  }
+  position: relative;
+  .imgWrap {
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+  }
+  span {
+    top: 11px;
+    width: 100% !important;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    margin: 0 auto;
+
+    h2 {
+      color: #fff;
+      font-size: clamp(1.75rem, 1.3099rem + 1.8779vw, 3rem) !important;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: clamp(1.4375rem, 1.2394rem + 0.8451vw, 1.6rem);
+      line-height: 1;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    button {
+      background-color: #cef952;
+      border-radius: 2px;
+      padding: 16px 24px;
+      color: #132239;
+    }
+  }
+}
+
+.happeningSoon {
+  position: absolute;
+  right: 130px;
+  bottom: 30px;
+  text-align: center;
+  @include medium(max-width) {
+    right: 70px;
+    bottom: 120px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #89909c;
+    margin-bottom: 8px;
+  }
+  span {
+    font-size: 24px;
+    line-height: 46px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #b8bdc4;
+  }
+}

@@ -1,0 +1,101 @@
+@import "../../assets/css/mixing";
+
+.nitroCommunitySection {
+  padding: 80px 0;
+
+  @include medium(min-width) {
+    padding: 120px 0;
+  }
+
+  .nitroCommunityTextWrapper {
+    min-height: 465px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--Primary-05);
+    position: relative;
+    padding: 0 16px;
+    z-index: 1;
+    h3 {
+      font-family: var(--Magistral-Bold);
+      font-style: normal;
+      font-weight: 700;
+      font-size: calc(clamp(24px, 2.7vw + 9px, 60px));
+      line-height: 1.1;
+      letter-spacing: 0.05em;
+      color: var(--Regular-text-color);
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: var(--Magistral-Book);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      color: var(--Regular-text-color);
+      max-width: 685px;
+      margin-bottom: 48px;
+    }
+    .communityBtns {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      grid-gap: 16px;
+      flex-wrap: wrap;
+
+      .discordBtn {
+        background: var(--Discord-Color);
+        margin: 0;
+        display: flex;
+        // align-items: center;
+        width: 221px;
+
+        @include medium(min-width) {
+          margin-right: 16px;
+        }
+      }
+      .telegramBtn {
+        background: var(--telegram-color);
+        display: flex;
+        // align-items: center;
+      }
+    }
+    a.btn {
+      img {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+        margin-right: 16px;
+      }
+    }
+
+    .communityLeftVectors {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      display: none;
+
+      @include medium(min-width) {
+        display: block;
+      }
+    }
+    .communityRightVectors {
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      z-index: -1;
+      display: none;
+
+      @include medium(min-width) {
+        display: block;
+      }
+    }
+  }
+  .nitroCommunityText {
+    text-align: center;
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../assets/css/mixing";
+
+.buyLandSection {
+  min-height: 740px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px 0;
+  background: url(../../public/Images/land-sale-mob.png) no-repeat top 40px
+      center,
+    url(../../public/Images/land-sale-mob-glow.png) no-repeat top -330px center,
+    #132239;
+
+  @include medium(min-width) {
+    justify-content: flex-end;
+    min-height: 660px;
+    background: url(../../public/Images/land-sale-mob.png) no-repeat top 40px
+        center,
+      url(../../public/Images/land-sale-mob-glow.png) no-repeat top -330px center,
+      #132239;
+  }
+
+  @include large(min-width) {
+    justify-content: center;
+    background: url(../../public/Images/land-sale-bg-l.png) no-repeat top left,
+      url(../../public/Images/land-sale-bg-r.png) no-repeat top right,
+      url(../../public/Images/land-sale-img.png) no-repeat right center, #132239;
+  }
+
+  h2 {
+    color: var(--Plain-White);
+    margin-bottom: 16px;
+  }
+  p {
+    color: var(--Plain-White);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  &.avatarSaleSection {
+    min-height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: flex-start;
+    background: url(../../public/Images/avatars-sale-image.png) no-repeat center
+        bottom/400px,
+      #132239;
+
+    @include medium(min-width) {
+      justify-content: center;
+      background: url(../../public/Images/land-sale-bg-l.png) no-repeat top left,
+        url(../../public/Images/land-sale-bg-r.png) no-repeat top right,
+        url(../../public/Images/avatars-sale-image.png) no-repeat right -230px center,
+        #132239;
+    }
+
+    h2 {
+      color: var(--Plain-White);
+      margin-bottom: 16px;
+    }
+    p {
+      color: var(--Plain-White);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+}

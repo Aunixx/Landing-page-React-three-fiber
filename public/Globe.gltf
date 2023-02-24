@@ -1,0 +1,325 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2880,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 559,
+      "max": [
+        59.9999961853027,
+        59.9999961853027,
+        59.9999961853027
+      ],
+      "min": [
+        -59.9999961853027,
+        -59.9999961853027,
+        -59.9999961853027
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 559,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 559,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5125,
+      "count": 2880,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 559,
+      "max": [
+        60.0,
+        60.0,
+        60.0
+      ],
+      "min": [
+        -60.0,
+        -60.0,
+        -60.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 559,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 559,
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "generator": "Adobe Substance 3D Painter 7.3.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 11520,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6708,
+      "byteOffset": 11520,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6708,
+      "byteOffset": 18228,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4472,
+      "byteOffset": 24936,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 11520,
+      "byteOffset": 29408,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6708,
+      "byteOffset": 40928,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6708,
+      "byteOffset": 47636,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4472,
+      "byteOffset": 54344,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 58816,
+      "uri": "Untitled.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "MAT_Clouds_baseColor.png"
+    },
+    {
+      "uri": "MAT_Clouds_occlusionRoughnessMetallic.png"
+    },
+    {
+      "uri": "MAT_Clouds_normal.png"
+    },
+    {
+      "uri": "MAT_Earth_baseColor.png"
+    },
+    {
+      "uri": "MAT_Earth_occlusionRoughnessMetallic.png"
+    },
+    {
+      "uri": "MAT_Earth_normal.png"
+    },
+    {
+      "uri": "MAT_Earth_emissive.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "name": "MAT_Clouds",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "alphaMode": "OPAQUE",
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 6
+      },
+      "name": "MAT_Earth",
+      "normalTexture": {
+        "index": 5
+      },
+      "occlusionTexture": {
+        "index": 4
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "AST_Earth",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 2,
+            "POSITION": 1,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "AST_Clouds",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "AST_Earth",
+      "rotation": [
+        -0.70710676908493,
+        0.0,
+        0.0,
+        0.70710676908493
+      ]
+    },
+    {
+      "mesh": 0,
+      "name": "AST_Earth"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "AST_Clouds",
+      "rotation": [
+        -0.70710676908493,
+        0.0,
+        0.0,
+        0.70710676908493
+      ],
+      "scale": [
+        1.00499999523163,
+        1.00499999523163,
+        1.00499999523163
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "AST_Clouds"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9985,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    },
+    {
+      "sampler": 0,
+      "source": 6
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+@import "../../assets/css/mixing";
+
+.roadmapBody {
+  background: #132239;
+  color: #fff;
+  h4,
+  h3 {
+    color: #fff;
+  }
+  user-select: none;
+}
+.roadmapCoverWrapper {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: calc(clamp(3rem, 1.9078rem + 4.6602vw, 7.5rem));
+  background-image: url("../../public/Images/quarter-cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.roadmapSection {
+  padding-bottom: calc(clamp(3rem, 1.9078rem + 4.6602vw, 7.5rem));
+  transform: translateY(-85px);
+  :global {
+    .row {
+      // padding-bottom: calc(clamp(3rem, 1.9078rem + 4.6602vw, 7.5rem));
+    }
+  }
+}
+.roadmapQuarterTitleCol {
+  .roadmapQuarterTitle {
+    @include ipad(min-width) {
+      position: sticky;
+      top: 250px;
+    }
+  }
+
+  h4 {
+    font-family: var(--Magistral-Bold);
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(clamp(2rem, 1.6359rem + 1.5534vw, 3.5rem));
+    line-height: 1;
+    color: var(--Plain-White);
+    margin-bottom: 32px;
+  }
+}
+.roadmapQuarterContent {
+  max-width: 650px;
+
+  .quarterItem {
+    margin-bottom: 56px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h3 {
+    font-family: var(--Magistral-Medium);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--Plain-White);
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-family: var(--Magistral-Bold);
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(clamp(1.75rem, 1.4466rem + 1.2945vw, 3rem));
+    line-height: 1;
+    color: var(--Plain-White);
+    margin-bottom: calc(clamp(1.75rem, 1.568rem + 0.7767vw, 2.5rem));
+  }
+  p {
+    font-family: var(--Primary-10);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--Primary-10);
+    margin-bottom: 0;
+  }
+  img {
+    display: block !important   ;
+    margin-bottom: calc(clamp(1.25rem, 1.068rem + 0.7767vw, 2rem)) !important;
+  }
+}
+
+// main {
+//   transform: translateY(-85px);
+// }
+.bluredSec {
+  filter: blur(12px) drop-shadow(0 0 0.75rem #122339);
+  opacity: 0.7;
+}

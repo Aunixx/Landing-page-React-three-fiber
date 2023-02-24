@@ -1,0 +1,76 @@
+@import "../../assets/css/mixing";
+
+.astroCarsWrapper {
+  height: 910px;
+  background-color: #132239;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right 30%;
+  isolation: isolate;
+  @include medium(max-width) {
+    height: 610px;
+  }
+  .carWrap {
+    position: absolute !important;
+    bottom: -12px !important;
+    z-index: -1;
+    width: 100% !important;
+    span {
+      width: 100% !important;
+    }
+  }
+  .content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 460px;
+    text-align: center;
+    width: 100%;
+    padding-inline: 22px;
+    @include medium(max-width) {
+      top: 50%;
+    }
+    .closed {
+      font-size: 20px;
+      line-height: 40px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #cef952;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.socialLinks {
+  max-width: 400px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    margin-bottom: 16px !important  ;
+    padding: 16px !important    ;
+    color: #fff;
+  }
+  li {
+    a {
+      display: flex;
+    }
+    img {
+      width: 16px !important;
+      height: 16px !important   ;
+    }
+  }
+}

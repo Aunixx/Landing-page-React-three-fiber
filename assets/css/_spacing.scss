@@ -1,0 +1,67 @@
+$spaces: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36,
+  38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76,
+  78, 80, 120, 152, 172, 200, 230;
+@each $space in $spaces {
+  // margins
+  .nitro-mt-#{$space} {
+    margin-top: $space + px;
+  }
+  .nitro-mr-#{$space} {
+    margin-right: $space + px;
+  }
+  .nitro-mb-#{$space} {
+    margin-bottom: $space + px;
+  }
+  .nitro-ml-#{$space} {
+    margin-left: $space + px;
+  }
+  .nitro-mx-#{$space} {
+    margin-inline: $space + px;
+  }
+  .nitro-my-#{$space} {
+    margin-block: $space + px;
+  }
+  .nitro-m-#{$space} {
+    margin: $space + px;
+  }
+  // paddings
+  .nitro-pt-#{$space} {
+    padding-top: $space + px;
+  }
+  .nitro-pr-#{$space} {
+    padding-right: $space + px;
+  }
+  .nitro-pb-#{$space} {
+    padding-bottom: $space + px;
+  }
+  .nitro-pl-#{$space} {
+    padding-left: $space + px;
+  }
+  .nitro-px-#{$space} {
+    padding-left: $space + px;
+    padding-right: $space + px;
+  }
+  .nitro-py-#{$space} {
+    padding-block: $space + px;
+  }
+  .nitro-p-#{$space} {
+    padding: $space + px;
+  }
+}
+
+.row {
+  --bs-gutter-x: 40px !important;
+  &-gutter-20 {
+    --bs-gutter-x: 20px !important;
+  }
+  &-gutter-0 {
+    --bs-gutter-x: 0px !important;
+  }
+  &-gutter-30 {
+    --bs-gutter-x: 30px !important;
+  }
+  &-grid {
+    --bs-gutter-y: clamp(16px, 3vw, 40px) !important;
+    --bs-gutter-x: clamp(16px, 3vw, 40px) !important;
+  }
+}

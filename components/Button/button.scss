@@ -1,0 +1,185 @@
+#nitro-btn {
+  text-transform: capitalize;
+  padding-inline: 24px;
+  height: 42px;
+  border-radius: 4px;
+  background: var(--Torch-Red);
+  border: 1px solid transparent;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+  }
+
+  span {
+    font-size: clamp(23px, 1vw + 5px, 16px);
+    font-family: var(--Magistral-Bold);
+    color: var(--Plain-White);
+    line-height: 1;
+    text-transform: capitalize;
+  }
+  &.light-weight {
+    span {
+      font-family: var(--Magistral-Medium);
+      font-size: 16px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+  &.btn-block {
+    width: 100%;
+  }
+  &.btn-md {
+    height: 40px;
+    width: 170px;
+  }
+  &.btn-lg {
+    height: 48px;
+  }
+  &.btn-xl {
+    height: 60px;
+  }
+  &.nitro-btn-dark {
+    svg {
+      path {
+        stroke: var(--Plain-White);
+      }
+    }
+  }
+  &.radius-0 {
+    border-radius: 0;
+  }
+  &.nitro-btn-underlined {
+    border-color: var(--Torch-Red);
+    background: transparent;
+    span {
+      text-decoration: underline;
+      color: var(--Torch-Red);
+    }
+  }
+  &.nitro-btn-default {
+    background: var(--Torch-Red);
+    span {
+      color: var(--Torch-Red);
+    }
+  }
+  &.nitro-btn-outline-white {
+    background: transparent;
+    border-color: var(--Plain-White) !important;
+    span {
+      color: var(--Plain-White) !important;
+    }
+  }
+  &.nitro-btn-rounded {
+    border-radius: 30px;
+  }
+  &.nitro-btn-gradient {
+    background: var(--linear-gradient);
+    border: none;
+  }
+  &.nitro-btn-green {
+    background: var(--Green-Btn);
+    border: none;
+    border-radius: 0px;
+    span {
+      color: var(--Primary-100);
+    }
+  }
+  &.nitro-btn-metamask {
+    background: var(--metamask-linear-gradient);
+    border: none;
+  }
+  &.nitro-btn-dark-gray {
+    background: var(--label-color);
+    color: var(--black);
+  }
+
+  &.nitro-btn-dark-gray-2 {
+    background: var(--border-color);
+    span {
+      color: var(--black);
+    }
+  }
+
+  &.nitro-btn-light-blue {
+    background: rgba(var(--light-blue-badge), 0.1);
+    span {
+      color: rgba(var(--dark-primary-color), 1);
+    }
+  }
+  &.nitro-btn-white {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    span {
+      color: var(--black);
+    }
+  }
+
+  &.nitro-btn-light-purple {
+    background: rgba(var(--purple-badge), 0.1);
+    span {
+      color: rgba(var(--purple-badge), 1);
+    }
+  }
+
+  &.nitro-btn-english {
+    background: var(--uncommon);
+    span {
+      color: var(--white);
+    }
+  }
+
+  &.nitro-btn-sealed {
+    background: var(--regular-gray-text-color);
+    span {
+      color: var(--white);
+    }
+  }
+
+  &.nitro-btn-dutch {
+    background: var(--special);
+    span {
+      color: var(--white);
+    }
+  }
+  &.icon-sm {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.nitro-we-btn {
+    span {
+      color: rgba(var(--light-blue-badge), 1);
+    }
+  }
+  &.nitro-btn-outlined {
+    border-color: var(--dark-primary-color);
+    background: transparent;
+    span {
+      color: var(--dark-primary-color);
+    }
+  }
+
+  &.nitro-btn-dark-blue {
+    background: var(--dark-text-color);
+    span {
+      color: var(--white);
+    }
+  }
+  &.nitro-btn-dashed {
+    border-style: dashed;
+    border-color: var(--border-color);
+  }
+  &.nitro-icon-btn {
+    height: 44px;
+    width: 44px;
+    padding: 14px;
+
+    span {
+      margin: 0;
+    }
+  }
+  img {
+    width: 24px;
+  }
+}

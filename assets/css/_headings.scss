@@ -1,0 +1,61 @@
+@import "../../assets/css/mixing";
+// @import './fonts';
+h1 {
+  @include fontStyle(
+    $family: var(--Magistral-Bold),
+    $size: calc(clamp(28px, 3vw + 7px, 66px)),
+    $lineHeight: 1.2,
+    $color: var(--Theme-Black)
+  );
+  margin: 0;
+}
+
+h2 {
+  @include fontStyle(
+    $family: var(--Magistral-Bold),
+    $size: calc(clamp(24px, 2.7vw + 9px, 60px)),
+    $lineHeight: 1.2
+  );
+  margin: 0;
+}
+
+h3 {
+  @include fontStyle(
+    $family: var(--Magistral-Bold),
+    $size: calc(clamp(20px, 2vw + 10px, 48px)),
+    $lineHeight: 1.5
+  );
+  margin: 0;
+}
+
+h4 {
+  @include fontStyle(
+    $family: var(--Magistral-Bold),
+    $size: calc(clamp(18px, 1.5vw + 4px, 32px)),
+    $lineHeight: 1.3
+  );
+  margin: 0;
+}
+
+h5 {
+  @include fontStyle(
+    $family: var(--Magistral-Bold),
+    $size: 28px,
+    $lineHeight: 1.3
+  );
+  margin: 0;
+}
+
+h6 {
+  @include fontStyle(
+    $family: var(--Magistral-Medium),
+    $size: 22px,
+    $lineHeight: 1.3
+  );
+  margin: 0;
+}
+
+p {
+  font-size: calc(clamp(16px, 1vw + 1px, 20px));
+  line-height: 1.3;
+}

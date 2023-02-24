@@ -1,0 +1,26 @@
+@import "../../assets/css/mixing";
+.nitroPrimeSection {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: url(../../public/Images/nitro-prime-bg.webp) no-repeat center/cover, #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include medium(min-width) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 100vh;
+  }
+
+  h2 {
+    color: var(--Plain-White);
+    margin-bottom: 24px;
+    font-size: calc(clamp(2rem, 1.6359rem + 1.5534vw, 3.5rem));
+  }
+  p {
+    color: var(--Primary-20);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}

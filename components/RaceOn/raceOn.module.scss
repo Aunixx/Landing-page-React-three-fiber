@@ -1,0 +1,50 @@
+@import "../../assets/css/mixing";
+
+.RaceOnSection {
+  background-color: #132239;
+  background-image: url("../../public/Images/raceOnImg.png"),
+    url("../../public/Images/raceOnBg.svg");
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding-block: 180px;
+  color: var(--Plain-White);
+  position: relative;
+  @include medium(max-width) {
+    background-size: cover;
+    height: 570px;
+  }
+  .content {
+    h3 {
+      font-size: clamp(2.5rem, 2.2573rem + 1.0356vw, 2.59rem);
+      color: var(--Plain-White);
+    }
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      max-width: 580px;
+    }
+    a {
+      text-transform: uppercase;
+      small {
+        font-family: var(--Magistral-Medium) !important;
+      }
+    }
+    @include medium(max-width) {
+      position: absolute;
+      bottom: 15px;
+    }
+  }
+  .soonWrap {
+    display: flex;
+    flex-direction: column;
+    small {
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+      color: var(--Primary-60);
+    }
+  }
+}

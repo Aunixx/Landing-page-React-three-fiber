@@ -1,0 +1,77 @@
+@mixin fontStyle(
+  $family: var(--Magistral-Book),
+  $size: 20px,
+  $weight: normal,
+  $style: normal,
+  $lineHeight: 1,
+  $color: var(--Regular-text-color)
+) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+// media queries
+$xSmall: 575px;
+$small: 576px;
+$medium: 768px;
+$Smedium: 767px;
+$large: 991px;
+$ipad: 1024px;
+$xLarge: 1200px;
+$xxLarge: 1440px;
+$xxxLarge: 1680px;
+@mixin xSmall($minmax) {
+  @media (#{$minmax}: #{$xSmall}) {
+    @content;
+  }
+}
+
+@mixin small($minmax) {
+  @media (#{$minmax}: #{$small}) {
+    @content;
+  }
+}
+
+@mixin medium($minmax) {
+  @media (#{$minmax}: #{$medium}) {
+    @content;
+  }
+}
+@mixin Smedium($minmax) {
+  @media (#{$minmax}: #{$Smedium}) {
+    @content;
+  }
+}
+
+@mixin large($minmax) {
+  @media (#{$minmax}: #{$large}) {
+    @content;
+  }
+}
+
+@mixin ipad($minmax) {
+  @media (#{$minmax}: #{$ipad}) {
+    @content;
+  }
+}
+
+@mixin xLarge($minmax) {
+  @media (#{$minmax}: #{$xLarge}) {
+    @content;
+  }
+}
+
+@mixin xxLarge($minmax) {
+  @media (#{$minmax}: #{$xxLarge}) {
+    @content;
+  }
+}
+@mixin xxxLarge($minmax) {
+  @media (#{$minmax}: #{$xxxLarge}) {
+    @content;
+  }
+}

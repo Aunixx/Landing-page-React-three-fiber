@@ -1,0 +1,183 @@
+@import "../../assets/css/mixing";
+
+.kiirus__metaverse {
+    position: relative;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  &_logo {
+    position: absolute;
+    top: 60px;
+    // margin-top: 60px;
+  }
+
+  &_content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    top: 100px;
+    z-index: 10;
+    padding: 12px;
+    @media (max-width: 768px){
+        gap: 24px;
+    }
+    h1 {
+      font-style: italic;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 67px;
+      text-transform: uppercase;
+      color: #fff;
+      max-width: 1164px;
+      width: 100%;
+      margin-top: 65px;
+        @media (max-width: 768px){
+            font-size: 32px;
+            line-height: 50px;
+        }
+      span {
+        color: #fa0339;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #fff;
+      gap: unset;
+      margin-bottom: -16px;
+    }
+
+    &_btns {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    &_btn1 {
+      background: var(--Discord-Color);
+      color: #fff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+      line-height: 22px;
+      font-weight: 400;
+      font-size: 18px;
+      gap: 16px;
+      width: 195px;
+      height: 52px;
+      @media (max-width: 768px){
+        width: 160px;
+    }
+    }
+
+    &_btn2 {
+      background: var(--telegram-color);
+      color: #fff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      letter-spacing: 0.05em;
+      line-height: 22px;
+      font-weight: 400;
+      font-size: 18px;
+      border-radius: 4px;
+      width: 195px;
+      height: 52px;
+      @media (max-width: 768px){
+        width: 160px;
+    }
+    }
+
+    &_input {
+      background: #2a2f38;
+      max-width: 630px;
+      width: 100%;
+      height: 66px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px;
+      margin: 0 auto;
+      @media (max-width: 768px){
+        background: transparent;
+        padding:0;
+        max-width: 450px;
+    }
+
+      ::placeholder {
+        color: #fff;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        @media (max-width: 768px){
+            background: #2a2f38;
+            padding: 16px;
+        }
+      }
+
+      button {
+        background: #fa0339;
+        max-width: 116px;
+        width: 100%;
+        height: 49px;
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        border-radius: 4px;
+        color: #fff;
+        @media (max-width: 768px){
+            height: auto;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            max-width: 90px;
+        }
+      }
+    }
+  }
+
+  &_image {
+    position: absolute;
+    bottom: 0;
+   z-index: 5;
+  }
+
+  &_connectBtn {
+    max-width: 218px;
+    width: 100%;
+    height: 44px;
+    background: #fa0339;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0 auto;
+  }
+}

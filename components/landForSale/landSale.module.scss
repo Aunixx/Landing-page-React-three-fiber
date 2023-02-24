@@ -1,0 +1,86 @@
+.landForSaleWraper {
+  background-color: #081224;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .detail {
+    max-width: 730px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    h3 {
+      color: var(--Plain-White) !important;
+      font-size: clamp(2.5rem, 2.2573rem + 1.0356vw, 2.59rem);
+      margin-bottom: 8px;
+    }
+    p {
+      text-align: center;
+      color: var(--Plain-White);
+      font-size: clamp(1.12rem, 1.3rem + 0.3vw, 0.8rem);
+      line-height: 1.4;
+    }
+  }
+  .saleImgWrap {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    flex-wrap: wrap;
+  }
+  .saleImgs {
+    position: relative;
+    .imgDesc {
+      color: #fff;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      transition: 0.5s all;
+
+      .item {
+        font-size: 20.25px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        margin-bottom: 6px;
+      }
+      .zone {
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #b8bdc4;
+        margin-bottom: 6px;
+        white-space: nowrap;
+      }
+      .pricing {
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+        color: #b8bdc4;
+        margin-bottom: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          margin-right: 6px;
+          color: #62688f;
+        }
+      }
+    }
+  }
+  .exploreBtn {
+    background-color: var(--Torch-Red);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 48px;
+  }
+}

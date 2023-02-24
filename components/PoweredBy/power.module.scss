@@ -1,0 +1,212 @@
+@import "../../assets/css/mixing";
+
+.empoweredSection {
+  background: var(--Dark-Black);
+  padding: calc(clamp(100px, 6vw + 5px, 120px)) 0
+    calc(clamp(100px, 12vw + 10px, 240px));
+  .empoweredIner {
+    .headingWrap {
+      //   max-width: 350px;
+      // text-align: center;
+      margin: 0 auto 50px;
+      .border {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: red;
+          height: 2px;
+          width: 200px;
+          // left: -50px;
+          // transform: translate(-50%, -50%);
+          top: -28px;
+          // @include large(max-width) {
+          //   left: 79px;
+          //   width: 130px;
+          // }
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          background-color: red;
+          height: 7px;
+          width: 123px;
+          max-width: 211px;
+          // left: -150px;
+          /* transform: translate(-50%, -50%); */
+          top: -35px;
+          clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+          // @include large(max-width) {
+          //   left: 14px;
+          //   width: 86px;
+          // }
+        }
+      }
+      h2 {
+        // font-size: calc(clamp(40px, 2.7vw + 9px, 60px)) !important  ;
+        color: var(--Plain-White);
+        // text-align: center;
+      }
+    }
+
+    .empLogos {
+      border: 1px solid #dee3eb30;
+      padding: 40px 0;
+      text-align: center;
+      @include ipad(min-width) {
+        padding: 80px 0;
+        text-align: left;
+      }
+      .dibySection {
+        padding: 0 20px 50px;
+        border-bottom: 1px solid #dee3eb30;
+        @include ipad(min-width) {
+          padding: 0 40px 90px;
+          border-bottom: 1px solid #dee3eb30;
+        }
+        @include xLarge(min-width) {
+          padding: 0 100px 90px;
+          border-bottom: 1px solid #dee3eb30;
+        }
+        .inerDiby {
+          max-width: 400px;
+          margin: 0 auto;
+          @include ipad(min-width) {
+            max-width: 100%;
+          }
+          h3 {
+            color: var(--Torch-Red);
+            font-size: 16px;
+            line-height: 1.3;
+            margin-bottom: 60px;
+            width: 100%;
+            text-transform: uppercase;
+            @include ipad(min-width) {
+              margin-bottom: 60px;
+            }
+          }
+
+          .dibyLogosContent {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            @include ipad(min-width) {
+              grid-template-columns: 1fr 1fr;
+              grid-gap: 30px;
+            }
+            .hotWire {
+              .dibyLogos {
+                max-width: 100%;
+                width: 100%;
+                margin-bottom: 50px;
+                @include ipad(min-width) {
+                  max-width: 350px;
+                  margin-bottom: 0;
+                }
+                @include xLarge(min-width) {
+                  max-width: 340px;
+                  width: 100%;
+                  margin-bottom: 0px;
+                }
+                img {
+                  max-width: 60%;
+                  @include ipad(min-width) {
+                    max-width: 100%;
+                  }
+                }
+                p {
+                  color: var(--Plain-White) !important;
+                  margin-top: 15px !important;
+                  font-size: 16px;
+                  line-height: 1.5;
+                  @include ipad(min-width) {
+                    font-size: 18px;
+                    margin: 0 0;
+                  }
+                }
+              }
+              &.tkCapital {
+                display: grid;
+                grid-template-columns: 1fr;
+                align-items: center;
+                @include ipad(min-width) {
+                  grid-template-columns: 1fr 1fr;
+                }
+                .tkxelLogo {
+                  //   p {
+                  //     color: #fff !important  ;
+                  //   }
+                  @include ipad(min-width) {
+                    padding-right: 30px;
+                  }
+                  @include xLarge(min-width) {
+                    padding-right: 60px;
+                  }
+                }
+                .sl2CapitalLogo {
+                  margin-bottom: 0;
+                  @include ipad(min-width) {
+                    border-left: 1px solid #dee3eb30;
+                    padding-left: 30px;
+                  }
+                  @include xLarge(min-width) {
+                    padding-left: 60px;
+                  }
+                }
+              }
+            }
+            // .tk-capital {
+
+            // }
+          }
+        }
+
+        &.experienceSection {
+          padding: 40px 20px 0px;
+          border-bottom: 0;
+          @include ipad(min-width) {
+            padding: 80px 40px 0px;
+          }
+          @include xLarge(min-width) {
+            padding: 80px 100px 0px;
+          }
+          .inerDiby {
+            max-width: 400px;
+            margin: 0 auto;
+            @include ipad(min-width) {
+              max-width: 100%;
+            }
+            h3 {
+              margin-bottom: 40px;
+            }
+            .dibyLogosContent {
+              .hotWireLogo {
+                margin-bottom: 0;
+                img {
+                  @include ipad(min-width) {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+              .tvContent {
+                .tvText {
+                  img {
+                    margin-bottom: 0;
+                  }
+                  p {
+                    color: var(--Plain-White);
+                    font-size: 20px;
+                    line-height: 1.3;
+                    @include ipad(min-width) {
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

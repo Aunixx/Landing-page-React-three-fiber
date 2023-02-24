@@ -1,0 +1,71 @@
+.purchaseLandWrapper {
+  background-color: #081224;
+  padding-bottom: 50px;
+  color: var(--Plain-White);
+
+  .imgWrap {
+    border: 1px solid #424e61;
+    padding: 12px;
+    img {
+      width: 400px !important;
+      height: 400px !important;
+    }
+  }
+  .content {
+    h3 {
+      color: var(--Plain-White) !important;
+      font-size: clamp(2.5rem, 2.2573rem + 1.0356vw, 2.59rem);
+      margin-bottom: 8px;
+    }
+    p {
+      color: var(--Plain-White);
+      font-size: clamp(1.12rem, 1.3rem + 0.3vw, 0.8rem);
+      line-height: 1.4;
+    }
+  }
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .content {
+      max-width: 290px;
+      cursor: pointer;
+      position: relative;
+      opacity: 0.3;
+      transition: 0.3s all;
+      // opacity: 0;
+      transform: translateY(300px);
+
+      .num {
+        font-size: 41px;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+      }
+      .text {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      .underline {
+        background-color: var(--Torch-Red);
+        height: 2px;
+        width: 100%;
+        position: relative;
+        &.active {
+          &:before {
+            position: absolute;
+            content: "";
+            height: 7px;
+            width: 50%;
+            background-color: var(--Torch-Red);
+            top: -6px;
+            clip-path: polygon(0% 0%, 94% 1%, 100% 100%, 0 100%);
+          }
+        }
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import "../../assets/css/mixing";
+
+.NavSection {
+    padding-top: 100px;
+    @include large(max-width) {
+        padding-top: 50px;
+    }
+    .PaperNav {
+        width: 360px;
+        z-index: 2001;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--Nav-Background);
+        border-right: 1px solid var(--Icon-Border-Color);
+        overflow-x: hidden;
+        overflow-y: visible;
+        left: 0;
+        top: 0;
+        @include large(max-width) {
+            display: none;
+        }
+        .NitroLogo {
+            cursor: pointer;
+            position: fixed;
+            right: 0;
+            bottom: 3%;
+            right: 2%;
+        }
+        ul {
+            li {
+                margin: 5px 0;
+                padding: 8px 28px;
+                a {
+                    line-height: normal;
+                    color: var(--Color-Light);
+                    text-transform: capitalize;
+                    font-family: var(--Open-Sans-Reg);
+                    font-size: 16px;
+                }
+                &.current {
+                    background-color: var(--Plain-White);
+                    position: relative;
+                    ::after {
+                        content: "";
+                        position: absolute;
+                        right: -2px;
+                        height: 100%;
+                        width: 4px;
+                        background: var(--Torch-Red);
+                        top: 0;
+                    }
+                    a {
+                        color: var(--Accordion-Title) !important;
+                        font-family: var(--Open-Sans-Bold) !important;
+                    }
+                }
+            }
+        }
+        .logo {
+            cursor: pointer;
+            padding: 40px 28px 32px 28px;
+            position: sticky;
+            top: 0;
+            background: var(--Nav-Background);
+            z-index: 9;
+        }
+    }
+}
+.ContentSection {
+    margin-left: 360px;
+    @include large(max-width) {
+        margin-left: 0;
+    }
+    .container {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: {
+            left: 60px;
+            right: 60px;
+        }
+        @include small(max-width) {
+            padding: {
+                left: 30px;
+                right: 30px;
+            }
+        }
+    }
+    .SectionOverview {
+        padding-bottom: 80px;
+    }
+    .Heading {
+        position: sticky;
+        top: 0;
+        background: var(--Plain-White);
+        z-index: 999;
+        padding-top: 20px;
+        h2 {
+            border-bottom: 1px solid var(--Sticky-Border);
+            padding-bottom: 20px;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            margin-bottom: 40px;
+        }
+    }
+    .Content {
+        padding-top: 30px;
+    }
+    p {
+        font-family: var(--Open-Sans-Reg);
+        font-size: 18px;
+        color: var(--Accordion-Title);
+        font-weight: 400;
+        margin-bottom: 40px;
+        opacity: 86%;
+    }
+    h5 {
+        font-weight: 500;
+        font-size: 22px;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+    ul {
+        list-style: disc;
+        padding-left: 32px !important;
+        margin-bottom: 20px !important;
+        li {
+            line-height: 1.8;
+            font-size: 18px;
+            color: var(--Accordion-Title);
+            font-family: var(--Open-Sans-Reg);
+        }
+    }
+    h3 {
+        margin-bottom: 20px;
+        font-size: 34px;
+    }
+    h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .stars {
+        display: flex;
+        span {
+            min-width: 120px;
+            color: var(--Accordion-Title);
+        }
+    }
+    ol {
+        li {
+            line-height: 1.8em;
+            font-size: 18px;
+            color: var(--Accordion-Title);
+            font-family: var(--Open-Sans-Reg);
+        }
+    }
+    .NitroLogo {
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+        cursor: pointer;
+    }
+}

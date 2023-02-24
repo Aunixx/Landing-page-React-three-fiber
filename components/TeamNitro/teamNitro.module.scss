@@ -1,0 +1,108 @@
+@import "../../assets/css/mixing";
+
+.teamSection {
+  // background: url(../images/jangla.svg) no-repeat top center;
+  padding: calc(clamp(200px, 5.3vw + 8px, 300px)) 0
+    calc(clamp(200px, 5vw + 8px, 300px));
+  .teamInerSection {
+    @include xLarge(min-width) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .teamHeading {
+      margin-bottom: 70px;
+      text-align: center;
+      .headingWrap {
+        max-width: 350px;
+        margin: 0 auto 20px;
+        .border {
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "";
+            background-color: red;
+            height: 2px;
+            width: 200px;
+            left: 50% !important;
+            transform: translate(-50%, -50%);
+            top: -28px;
+            @include large(max-width) {
+              left: 37%;
+              width: 100px;
+            }
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            background-color: red;
+            height: 5px;
+            width: 123px;
+            max-width: 211px;
+            left: -100px;
+            top: -34px;
+            clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+            @include large(max-width) {
+              left: -50px;
+              width: 60px;
+            }
+          }
+        }
+        h2 {
+          font-size: calc(clamp(40px, 2.7vw + 9px, 60px));
+        }
+      }
+    }
+
+    .ourTeamContent {
+      .teamListing {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        grid-row-gap: 50px;
+        max-width: 400px;
+        margin: 0 auto !important;
+        @include medium(min-width) {
+          grid-template-columns: repeat(3, 1fr);
+          max-width: 100%;
+          margin: 0 auto;
+        }
+
+        @include xLarge(min-width) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        li {
+          .teamMember {
+            .teamImage {
+              margin-bottom: 30px;
+              width: 100%;
+            }
+
+            .teamContent {
+              h3 {
+                font-size: 20px;
+                line-height: 1.3;
+                margin-bottom: 8px;
+                color: var(--Accordion-Title);
+              }
+
+              p {
+                margin: 0 0;
+                line-height: 1.3;
+                font-size: 14px;
+                letter-spacing: 1px;
+                // opacity: 0.64;
+                color: var(--Accordion-Title);
+                &.teamDesignation {
+                  margin-bottom: 10px;
+                  color: var(--Gray-color);
+                  font-size: 16px;
+                  font-family: var(--Magistral-Medium);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

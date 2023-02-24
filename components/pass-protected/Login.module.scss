@@ -1,0 +1,59 @@
+@import "../../assets/css/mixing";
+.passWrap {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(180deg, #16223a 75.67%, #4f89ff 347.29%);
+}
+
+.form {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 40px;
+  input {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    width: clamp(12.5rem, 8.5387rem + 16.9014vw, 23.75rem);
+    height: 60px;
+    border: none;
+    color: var(--Plain-White);
+    &:focus,
+    &:active {
+      border: none;
+      outline: none;
+    }
+  }
+  .inputWrap {
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+
+    button {
+      background-color: var(--Torch-Red);
+      margin-top: 0 !important;
+      margin-left: 12px;
+      padding: 15px 32px !important;
+      color: var(--Plain-White);
+      height: 100%;
+    }
+    .wrong {
+      font-size: 14px;
+      line-height: 1;
+      color: var(--Torch-Red);
+      margin-top: 8px;
+    }
+  }
+  .content {
+    max-width: 1100px;
+    text-align: center;
+    p {
+      font-size: clamp(1.375rem, 1.1rem + 0.939vw, 1.6rem);
+      line-height: 42px;
+      color: var(--Plain-White);
+      margin-top: 32px;
+      margin-bottom: 24px;
+    }
+  }
+}

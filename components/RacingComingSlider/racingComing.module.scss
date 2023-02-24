@@ -1,0 +1,120 @@
+@import "../../assets/css/mixing";
+
+.Title {
+  margin-bottom: 40px;
+  .nitroSectionTitle {
+    max-width: 650px !important;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 24px;
+    font-size: 28px;
+    line-height: 1.4;
+  }
+}
+
+.racingFeatureSection {
+  background: url(../../public/Images/racing-feautres-bg.png) no-repeat bottom
+    center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include medium(max-width) {
+    background-size: contain;
+  }
+}
+
+.featureCardHover {
+  position: relative;
+  .featureCardText {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 24px;
+    transition: 0.5s;
+    @include medium(min-width) {
+      padding: 32px;
+    }
+    h3 {
+      color: var(--Plain-White);
+      font-size: clamp(1.25rem, 1rem + 1vw, 1.54rem);
+      line-height: 1;
+      @include medium(min-width) {
+        line-height: 1.5;
+      }
+    }
+    p {
+      color: var(--Plain-White);
+      font-size: 16px;
+      font-family: var(--Magistral-Light);
+      color: var(--Primary-10);
+      margin-bottom: 0;
+    }
+  }
+
+  .garageBtn {
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+  }
+  &:hover {
+    .featureCardText {
+      transform: translateY(-50px);
+    }
+    .garageBtn {
+      opacity: 1;
+    }
+  }
+}
+
+.featureCard {
+  position: relative;
+  .featureCardText {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 24px;
+    transition: 0.5s;
+    @include medium(min-width) {
+      padding: 32px;
+    }
+    h3 {
+      color: var(--Plain-White);
+      font-size: clamp(1.25rem, 1rem + 1vw, 1.54rem);
+      line-height: 1;
+      @include medium(min-width) {
+        line-height: 1.5;
+      }
+    }
+    p {
+      color: var(--Plain-White);
+      font-size: 16px;
+      font-family: var(--Magistral-Light);
+      color: var(--Primary-10);
+      margin-bottom: 0;
+    }
+  }
+
+  .garageBtn {
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+  }
+  // &:hover {
+  //   .featureCardText {
+  //     transform: translateY(-50px);
+  //   }
+  //   .garageBtn {
+  //     opacity: 1;
+  //   }
+  // }
+}
+
+.mySwiper {
+  padding: 0 32px !important;
+  @include xxLarge(min-width) {
+    padding-left: calc(((100vw - 1440px) + 64px) / 2) !important  ;
+    padding-right: 0 !important;
+  }
+}

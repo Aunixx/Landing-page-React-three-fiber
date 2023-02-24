@@ -1,0 +1,34 @@
+.formparent {
+    background-color: var(--Regular-text-color);
+}
+.FormDownload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 25%;
+    margin: 0 auto;
+    height: 100vh;
+    .Formbtn {
+        color: var(--Plain-White) !important;
+        color: var(--Plain-White) !important;
+        font-size: 15px;
+        font-family: var(--Magistral-Medium);
+        background-color: var(--Torch-Red);
+        text-transform: uppercase;
+        border: none;
+        padding: 18px 34px;
+        color: var(--Plain-White);
+        font-family: var(--Magistral-Medium);
+        border-radius: 0px;
+        text-transform: uppercase;
+    }
+    h3,
+    label {
+        color: var(--Plain-White);
+    }
+}
+@media only screen and (max-width: 980px) {
+    .FormDownload {
+        max-width: 75%;
+    }
+}

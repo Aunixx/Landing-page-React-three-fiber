@@ -1,0 +1,65 @@
+@import "../../assets/css/mixing";
+
+.metaverseFeatures {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  // background-color: var(--Primary-05);
+}
+.buildFeaturesList {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 56px;
+  row-gap: 32px;
+
+  @include small(min-width) {
+    grid-template-columns: auto auto;
+    row-gap: 56px;
+  }
+  @include ipad(min-width) {
+    grid-template-columns: auto auto;
+  }
+
+  li {
+    .FeatureIcons {
+      min-width: 44px;
+      margin-right: 30px;
+    }
+    // &:last-child {
+    //   .FeatureIcons {
+    //     width: 15%;
+    //     @include medium(max-width) {
+    //       width: 25%;
+    //     }
+    //   }
+    // }
+    // &:nth-child(4) {
+    //   .FeatureIcons {
+    //     width: 15%;
+    //     @include medium(max-width) {
+    //       width: 25%;
+    //     }
+    //   }
+    // }
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    // .FeatureIcons {
+    //   width: 25%;
+    //   @include medium(max-width) {
+    //     width: 40%;
+    //   }
+    // }
+    .content {
+      @include medium(max-width) {
+        margin-left: 20px;
+      }
+      span {
+        font-size: 28px;
+        font-family: var(--Magistral-Medium);
+      }
+      p {
+        font-size: 19.6px;
+      }
+    }
+  }
+}

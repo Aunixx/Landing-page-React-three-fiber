@@ -1,0 +1,29 @@
+@import "../../assets/css/mixing";
+
+.HeaderSec {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url("../../public/Images/section-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    @include large(min-width) {
+        height: 100vh;
+    }
+    h1 {
+        font-family: var(--Magistral-Bold);
+        color: var(--Plain-White);
+        opacity: 0.9;
+        line-height: 1em;
+    }
+    p {
+        font-family: var(--Magistral-Medium);
+        color: var(--Plain-White);
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@public/*": ["public/*"],
+      "@constants/*": ["constants/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/gameEvents/index.js",
+    "components/GameComponents/Results/Result.js",
+    "services/apiToastService.js",
+    "utils/countDownRenderer.js",
+    "components/countDownRenderer/countDownRenderer.js",
+    "components/FrequentlyAskedQuestions/FAQ.js",
+    "pages/password-protected/index.js",
+    "pages/password-protected/Protected.js",
+    "pages/password-protected/Protected.js",
+    "components/pass-protected/Login.js",
+    "pages/download-app.html/index.htmltsx"
+  ],
+  "exclude": ["node_modules"]
+}

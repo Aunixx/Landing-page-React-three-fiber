@@ -1,0 +1,7 @@
+.chartWrapper {
+  :global {
+    .apexcharts-toolbar {
+      display: none !important;
+    }
+  }
+}

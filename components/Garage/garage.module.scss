@@ -1,0 +1,47 @@
+@import "../../assets/css/mixing";
+
+.garageExperienceSection {
+  position: relative;
+  height: 100vh;
+
+  .garageBgVid {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: -1;
+
+    @include medium(min-width) {
+      height: 100%;
+    }
+  }
+  .garageContent {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(92deg, black, transparent);
+
+    .garageContentWrapper {
+      max-width: 500px;
+    }
+    h2 {
+      font-size: calc(clamp(2rem, 1.6359rem + 1.5534vw, 3.5rem));
+      margin-bottom: 24px;
+      color: var(--Plain-White);
+    }
+    p {
+      color: var(--Primary-20);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+}

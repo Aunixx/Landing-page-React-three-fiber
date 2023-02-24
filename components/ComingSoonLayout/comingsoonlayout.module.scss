@@ -1,0 +1,29 @@
+.comingSoonLayout {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .icon {
+    max-width: 600px;
+    width: 100%;
+    @media screen {
+    }
+  }
+  .lfg {
+    background-color: #fa0339;
+    color: white;
+    padding: 0 8px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-family: var(--Magistral-Bold);
+  }
+  .link {
+    margin-top: 24px;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+  }
+}

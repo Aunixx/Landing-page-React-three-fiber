@@ -1,0 +1,41 @@
+.TestimonialSliderWrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--Regular-text-color);
+  h2 {
+    color: var(--Plain-White);
+    margin-top: 32px;
+  }
+
+  :global {
+    .swiper-slide {
+      opacity: 0.1;
+      cursor: pointer;
+      transition: all 0.1s;
+      &.swiper-slide-thumb-active {
+        opacity: 1;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  h5 {
+    font-size: 18px;
+    font-family: var(--Magistral-Bold);
+    color: var(--Plain-White);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .testimonialDesignation {
+    font-size: 14px;
+    font-family: var(--Magistral-Book);
+    color: var(--Plain-White);
+  }
+  img {
+    height: 200px !important    ;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 16px;
+  }
+}

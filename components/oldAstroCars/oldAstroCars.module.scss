@@ -1,0 +1,233 @@
+@import "../../assets/css/mixing";
+
+.astroCarsWrapper {
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right 30%;
+  isolation: isolate;
+  background-color: #08101c;
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    height: auto;
+  }
+  .bgWrap {
+    // background-image: url("../../public/Images/performance-part-bg.svg");
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .carWrap {
+    // position: absolute !important;
+    // bottom: -12px !important;
+    // z-index: -1;
+    // width: 100% !important;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    span {
+      max-width: 800px !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    @media (max-width: 992px) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 500px;
+      max-width: 100%;
+      height: unset;
+      margin-bottom: -20px;
+    }
+  }
+  .container {
+    display: flex;
+    // height: 100vh;
+    @media (max-width: 992px) {
+      align-items: flex-start;
+      height: 100%;
+      padding-bottom: 80px;
+    }
+  }
+  .contentWrap {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 2;
+  }
+  .content {
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    position: absolute;
+    top: 50%;
+    max-width: 460px;
+    transform: translateY(-40%);
+    @include medium(max-width) {
+      height: 70vh;
+      top: 20%;
+    }
+    @media (max-width: 992px) {
+      position: relative !important;
+      height: 100% !important;
+      transform: unset;
+    }
+
+    .mintingDetails {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      // margin-bottom: 32px;
+      .mintingItem {
+        p {
+          margin-bottom: 0;
+        }
+        .details {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 28px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+        }
+      }
+    }
+    h2 {
+      color: #fff;
+      margin-bottom: 24px;
+      @media (max-width: 768px) {
+        font-size: 32px !important;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      text-transform: capitalize;
+    }
+    .inputWrap {
+      background: radial-gradient(
+        100.43% 100.43% at 52.8% 100.43%,
+        #0071c2 0%,
+        rgba(0, 15, 38, 0) 100%
+      );
+      border: 1.14035px solid #0368a0;
+      border-radius: 2.9294px;
+      margin-bottom: 12px;
+      width: fit-content;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      .selectedAmount {
+        padding: 0 20px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+      button {
+        color: var(--Plain-White);
+        width: 30px;
+        &:not(:last-child) {
+          border-right: 1px solid var(--Plain-White);
+        }
+        padding-right: 12px;
+        &:last-child {
+          border-left: 1px solid var(--Plain-White);
+          padding-left: 12px;
+        }
+        &:disabled {
+          opacity: 0.5;
+        }
+      }
+    }
+    .etheriumWrap {
+      display: flex;
+      align-items: center;
+      p {
+        margin-bottom: 0;
+        margin-left: 8px;
+      }
+    }
+    .priceBtn {
+      min-width: 136px;
+      max-width: fit-content;
+      text-align: center;
+      margin-top: 20px;
+      background-color: #cef952;
+      padding: 16px;
+      border-radius: 2px;
+      color: #132239;
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.alertMessage {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  gap: 10px;
+  .text {
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    letter-spacing: 0.04em !important;
+    margin-bottom: 0;
+    color: #ffc453 !important;
+    width: 305px;
+    max-width: 100%;
+  }
+}
+
+.happeningSoon {
+  position: absolute;
+  left: 61%;
+  top: 30%;
+  @include medium(max-width) {
+    top: 70%;
+    left: 4%;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #89909c;
+    margin-bottom: 8px;
+  }
+  span {
+    font-size: 24px;
+    line-height: 46px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #b8bdc4;
+  }
+}
+
+.reveal {
+  font-size: 24px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #cef952 !important;
+  font-family: var(--Magistral-Bold);
+}
